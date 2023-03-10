@@ -1,46 +1,43 @@
 {
     "packages": {
-        "mojave-hq/captivate": [
+        "mojave-hq/ui": [
             {
-                "name": "mojave-hq/captivate",
+                "name": "mojave-hq/ui",
                 "version": "dev-main",
                 "version_normalized": "dev-main",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:mojave-hq/captivate.git",
-                    "reference": "664424eba2808a1a39b72b48f940986697139fef"
+                    "url": "git@github.com:mojave-hq/ui.git",
+                    "reference": "243419f9a02e87efec247d6f57c86f0cb5dd0282"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/mojave-hq/captivate/zipball/664424eba2808a1a39b72b48f940986697139fef",
-                    "reference": "664424eba2808a1a39b72b48f940986697139fef",
+                    "url": "https://api.github.com/repos/mojave-hq/ui/zipball/243419f9a02e87efec247d6f57c86f0cb5dd0282",
+                    "reference": "243419f9a02e87efec247d6f57c86f0cb5dd0282",
                     "shasum": ""
-                },
-                "require": {
-                    "livewire/livewire": "^2.12"
                 },
                 "require-dev": {
                     "orchestra/testbench": "^6.0|^7.0",
                     "phpunit/phpunit": "^9.3"
                 },
-                "time": "2023-03-10T21:56:34+00:00",
+                "time": "2023-03-10T21:55:35+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
                     "laravel": {
                         "providers": [
-                            "MojaveHQ\\Captivate\\CaptivateServiceProvider"
+                            "MojaveHQ\\UI\\UIServiceProvider"
                         ]
                     }
                 },
                 "autoload": {
                     "psr-4": {
-                        "MojaveHQ\\Captivate\\": "src/"
+                        "MojaveHQ\\UI\\": "src/"
                     }
                 },
                 "autoload-dev": {
                     "psr-4": {
-                        "MojaveHQ\\Captivate\\Tests\\": "tests/",
+                        "MojaveHQ\\UI\\Tests\\": "tests/",
                         "App\\": "stubs/app/",
                         "Database\\Factories\\": "database/factories/"
                     }
@@ -56,8 +53,8 @@
                 ],
                 "description": "Boilerplate for Laravel package development",
                 "support": {
-                    "source": "https://github.com/mojave-hq/captivate/tree/main",
-                    "issues": "https://github.com/mojave-hq/captivate/issues"
+                    "source": "https://github.com/mojave-hq/ui/tree/main",
+                    "issues": "https://github.com/mojave-hq/ui/issues"
                 }
             }
         ]

@@ -8,22 +8,22 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:mojave-hq/captivate.git",
-                    "reference": "6b09fd8a97e6f1a7142b45a311e5d8a51310d4ee"
+                    "reference": "664424eba2808a1a39b72b48f940986697139fef"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/mojave-hq/captivate/zipball/6b09fd8a97e6f1a7142b45a311e5d8a51310d4ee",
-                    "reference": "6b09fd8a97e6f1a7142b45a311e5d8a51310d4ee",
+                    "url": "https://api.github.com/repos/mojave-hq/captivate/zipball/664424eba2808a1a39b72b48f940986697139fef",
+                    "reference": "664424eba2808a1a39b72b48f940986697139fef",
                     "shasum": ""
                 },
                 "require": {
-                    "livewire/livewire": "dev-master"
+                    "livewire/livewire": "^2.12"
                 },
                 "require-dev": {
                     "orchestra/testbench": "^6.0|^7.0",
                     "phpunit/phpunit": "^9.3"
                 },
-                "time": "2023-03-04T03:53:48+00:00",
+                "time": "2023-03-10T21:56:34+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -61,44 +61,105 @@
                 }
             }
         },
-        "mojave-hq/package": {
+        "mojave-hq/shippopotamus": {
             "dev-main": {
-                "name": "mojave-hq/package",
+                "name": "mojave-hq/shippopotamus",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:mojave-hq/shippopotamus.git",
+                    "reference": "d3fee75dcf1ead6e57228378f4b54b533f75230c"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/mojave-hq/shippopotamus/zipball/d3fee75dcf1ead6e57228378f4b54b533f75230c",
+                    "reference": "d3fee75dcf1ead6e57228378f4b54b533f75230c",
+                    "shasum": ""
+                },
+                "require": {
+                    "guzzlehttp/guzzle": "^7.5@dev",
+                    "shippo/shippo-php": "^2.0"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^6.0|^7.0",
+                    "phpunit/phpunit": "^9.3"
+                },
+                "time": "2023-03-10T22:09:29+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "MojaveHQ\\Shippopotamus\\ShippopotamusServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "MojaveHQ\\Shippopotamus\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "MojaveHQ\\Shippopotamus\\Tests\\": "tests/",
+                        "Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steven Roland",
+                        "email": "steven@mojave.io"
+                    }
+                ],
+                "description": "Laravel Shippopotamus",
+                "support": {
+                    "source": "https://github.com/mojave-hq/shippopotamus/tree/main",
+                    "issues": "https://github.com/mojave-hq/shippopotamus/issues"
+                }
+            }
+        },
+        "mojave-hq/ui": {
+            "dev-main": {
+                "name": "mojave-hq/ui",
                 "version": "dev-main",
                 "version_normalized": "dev-main",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:mojave-hq/ui.git",
-                    "reference": "f55f5bb7662ff4b57a108f918f4f10ed44389e25"
+                    "reference": "243419f9a02e87efec247d6f57c86f0cb5dd0282"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/mojave-hq/ui/zipball/f55f5bb7662ff4b57a108f918f4f10ed44389e25",
-                    "reference": "f55f5bb7662ff4b57a108f918f4f10ed44389e25",
+                    "url": "https://api.github.com/repos/mojave-hq/ui/zipball/243419f9a02e87efec247d6f57c86f0cb5dd0282",
+                    "reference": "243419f9a02e87efec247d6f57c86f0cb5dd0282",
                     "shasum": ""
                 },
                 "require-dev": {
                     "orchestra/testbench": "^6.0|^7.0",
                     "phpunit/phpunit": "^9.3"
                 },
-                "time": "2023-03-10T14:44:10+00:00",
+                "time": "2023-03-10T21:55:35+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
                     "laravel": {
                         "providers": [
-                            "MojaveHQ\\Package\\PackageServiceProvider"
+                            "MojaveHQ\\UI\\UIServiceProvider"
                         ]
                     }
                 },
                 "autoload": {
                     "psr-4": {
-                        "MojaveHQ\\Package\\": "src/"
+                        "MojaveHQ\\UI\\": "src/"
                     }
                 },
                 "autoload-dev": {
                     "psr-4": {
-                        "MojaveHQ\\Package\\Tests\\": "tests/",
+                        "MojaveHQ\\UI\\Tests\\": "tests/",
                         "App\\": "stubs/app/",
                         "Database\\Factories\\": "database/factories/"
                     }

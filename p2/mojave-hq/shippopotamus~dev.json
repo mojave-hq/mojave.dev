@@ -1,47 +1,47 @@
 {
     "packages": {
-        "mojave-hq/captivate": [
+        "mojave-hq/shippopotamus": [
             {
-                "name": "mojave-hq/captivate",
+                "name": "mojave-hq/shippopotamus",
                 "version": "dev-main",
                 "version_normalized": "dev-main",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:mojave-hq/captivate.git",
-                    "reference": "664424eba2808a1a39b72b48f940986697139fef"
+                    "url": "git@github.com:mojave-hq/shippopotamus.git",
+                    "reference": "d3fee75dcf1ead6e57228378f4b54b533f75230c"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/mojave-hq/captivate/zipball/664424eba2808a1a39b72b48f940986697139fef",
-                    "reference": "664424eba2808a1a39b72b48f940986697139fef",
+                    "url": "https://api.github.com/repos/mojave-hq/shippopotamus/zipball/d3fee75dcf1ead6e57228378f4b54b533f75230c",
+                    "reference": "d3fee75dcf1ead6e57228378f4b54b533f75230c",
                     "shasum": ""
                 },
                 "require": {
-                    "livewire/livewire": "^2.12"
+                    "guzzlehttp/guzzle": "^7.5@dev",
+                    "shippo/shippo-php": "^2.0"
                 },
                 "require-dev": {
                     "orchestra/testbench": "^6.0|^7.0",
                     "phpunit/phpunit": "^9.3"
                 },
-                "time": "2023-03-10T21:56:34+00:00",
+                "time": "2023-03-10T22:09:29+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
                     "laravel": {
                         "providers": [
-                            "MojaveHQ\\Captivate\\CaptivateServiceProvider"
+                            "MojaveHQ\\Shippopotamus\\ShippopotamusServiceProvider"
                         ]
                     }
                 },
                 "autoload": {
                     "psr-4": {
-                        "MojaveHQ\\Captivate\\": "src/"
+                        "MojaveHQ\\Shippopotamus\\": "src/"
                     }
                 },
                 "autoload-dev": {
                     "psr-4": {
-                        "MojaveHQ\\Captivate\\Tests\\": "tests/",
-                        "App\\": "stubs/app/",
+                        "MojaveHQ\\Shippopotamus\\Tests\\": "tests/",
                         "Database\\Factories\\": "database/factories/"
                     }
                 },
@@ -54,10 +54,10 @@
                         "email": "steven@mojave.io"
                     }
                 ],
-                "description": "Boilerplate for Laravel package development",
+                "description": "Laravel Shippopotamus",
                 "support": {
-                    "source": "https://github.com/mojave-hq/captivate/tree/main",
-                    "issues": "https://github.com/mojave-hq/captivate/issues"
+                    "source": "https://github.com/mojave-hq/shippopotamus/tree/main",
+                    "issues": "https://github.com/mojave-hq/shippopotamus/issues"
                 }
             }
         ]
