@@ -1,0 +1,13 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$fee1f340853b45a761d195be93b1583d85d1acbc.json": {
+            "sha1": "fee1f340853b45a761d195be93b1583d85d1acbc"
+        }
+    },
+    "metadata-url": "/p2/%package%.json",
+    "available-packages": [
+        "mojave-hq/captivate",
+        "mojave-hq/package"
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "packages": {
+        "mojave-hq/captivate": [
+            {
+                "name": "mojave-hq/captivate",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:mojave-hq/captivate.git",
+                    "reference": "6b09fd8a97e6f1a7142b45a311e5d8a51310d4ee"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/mojave-hq/captivate/zipball/6b09fd8a97e6f1a7142b45a311e5d8a51310d4ee",
+                    "reference": "6b09fd8a97e6f1a7142b45a311e5d8a51310d4ee",
+                    "shasum": ""
+                },
+                "require": {
+                    "livewire/livewire": "dev-master"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^6.0|^7.0",
+                    "phpunit/phpunit": "^9.3"
+                },
+                "time": "2023-03-04T03:53:48+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "MojaveHQ\\Captivate\\CaptivateServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "MojaveHQ\\Captivate\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "MojaveHQ\\Captivate\\Tests\\": "tests/",
+                        "App\\": "stubs/app/",
+                        "Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Steven Roland",
+                        "email": "steven@mojave.io"
+                    }
+                ],
+                "description": "Boilerplate for Laravel package development",
+                "support": {
+                    "source": "https://github.com/mojave-hq/captivate/tree/main",
+                    "issues": "https://github.com/mojave-hq/captivate/issues"
+                }
+            }
+        ]
+    }
+}
