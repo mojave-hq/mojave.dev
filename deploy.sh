@@ -14,10 +14,10 @@ cd public/
 git config user.email "steven@mojave.io"
 git config user.name "Steven Roland"
 
-git checkout main
+git checkout gh-pages
 if [ 0 != $? ]; then
   # Create a new orphan branch to track deployments
-  git checkout --orphan main
+  git checkout --orphan gh-pages
 
   # Everything is being tracked, so remove it
   git rm --cached -r ./
@@ -36,7 +36,7 @@ composer run-script build
 cd public/
 git add --all
 git commit -m "Deploy Satis"
-git push -f origin main
+git push -f origin gh-pages
 
 # Cleanup (for those who don't use a CI).
 cd ..
