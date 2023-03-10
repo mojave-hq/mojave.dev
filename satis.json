@@ -1,0 +1,15 @@
+{
+  "name": "mojave-hq/satis",
+  "homepage": "https://mojave.dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:mojave-hq/captivate.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:mojave-hq/ui.git"
+    }
+  ],
+  "require-all": true
+}

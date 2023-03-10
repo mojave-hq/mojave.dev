@@ -1,0 +1,27 @@
+{
+  "name": "mojave-hq/satis",
+  "description": "Composer Satis repository reference for Mojave HQ's premium packages.",
+  "type": "project",
+  "homepage": "https://github.com/mojave-hq/mojave.dev",
+  "require": {
+    "composer/satis": "dev-main"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Steven Roland",
+      "email": "steven@mojave.io"
+    }
+  ],
+  "minimum-stability": "dev",
+  "scripts": {
+    "install-deps": "@composer install",
+    "build": "satis build satis.json public --no-interaction",
+    "deploy": "sh deploy.sh"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/satis": true
+    }
+  }
+}
